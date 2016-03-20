@@ -1,3 +1,0 @@
-package totfgatewayvthree;
-
-@license(LGPL);

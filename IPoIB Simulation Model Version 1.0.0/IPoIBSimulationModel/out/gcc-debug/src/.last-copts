@@ -1,1 +1,0 @@
--g -Wall   -I/usr/include -fno-stack-protector -DXMLPARSER=libxml -DWITH_PARSIM -DWITH_NETBUILDER -DINET_IMPORT -I../../CoRE4INET/src/linklayer/ethernet/base -I../../inet/src/inet/linklayer/common -I../../SharedClassesProj/src -I../../inet/src/inet/linklayer/ethernet -I../../inet/src -I. -ID:/omnetpp-4.6/include
