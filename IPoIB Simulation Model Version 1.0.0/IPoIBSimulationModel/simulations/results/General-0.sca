@@ -1,0 +1,33 @@
+version 2
+run General-0-20160320-14:50:42-11980
+attr configname General
+attr datetime 20160320-14:50:42
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network totfgatewayvthree.simulations.IPoIBOnlySimulation
+attr processid 11980
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar IPoIBOnlySimulation.globalListenerModule 	"Priority App 0 Total Latency" 	0
+scalar IPoIBOnlySimulation.globalListenerModule 	"Priority App 1 Total Latency" 	0
+scalar IPoIBOnlySimulation.globalListenerModule 	"Priority App 2 Total Latency" 	0
+scalar IPoIBOnlySimulation.globalListenerModule 	"Priority App 3 Total Latency" 	0
+scalar IPoIBOnlySimulation.globalListenerModule 	"Priority App 4 Total Latency" 	0
+scalar IPoIBOnlySimulation.globalListenerModule 	"Priority App 5 Total Latency" 	0
+scalar IPoIBOnlySimulation.globalListenerModule 	"Priority App 6 Total Latency" 	0
+scalar IPoIBOnlySimulation.globalListenerModule 	"Priority App 7 Total Latency" 	0
+scalar IPoIBOnlySimulation.globalListenerModule 	"Priority App 8 Total Latency" 	0
+scalar IPoIBOnlySimulation.globalListenerModule 	"Priority App 9 Total Latency" 	0
+scalar IPoIBOnlySimulation.globalListenerModule 	"Priority App 10 Total Latency" 	0
+scalar IPoIBOnlySimulation.globalListenerModule 	"Priority App 11 Total Latency" 	0
+scalar IPoIBOnlySimulation.globalListenerModule 	"Priority App 12 Total Latency" 	0
+scalar IPoIBOnlySimulation.globalListenerModule 	"Priority App 13 Total Latency" 	0
+scalar IPoIBOnlySimulation.globalListenerModule 	"Priority App 14 Total Latency" 	0
+scalar IPoIBOnlySimulation.globalListenerModule 	"Priority App 15 Total Latency" 	nan
