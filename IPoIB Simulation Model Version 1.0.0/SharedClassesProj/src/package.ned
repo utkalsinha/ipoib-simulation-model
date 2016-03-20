@@ -1,0 +1,3 @@
+package sharedclassesproj;
+
+@license(LGPL);

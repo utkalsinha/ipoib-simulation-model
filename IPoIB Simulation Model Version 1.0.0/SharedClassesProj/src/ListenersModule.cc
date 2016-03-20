@@ -1,0 +1,44 @@
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+// 
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Lesser General Public License for more details.
+// 
+// You should have received a copy of the GNU Lesser General Public License
+// along with this program.  If not, see http://www.gnu.org/licenses/.
+// 
+
+#include <cobjectfactory.h>
+#include <cregistrationlist.h>
+#include <csimulation.h>
+#include <ListenersModule.h>
+#include <MyFrameListener.h>
+#include <regmacros.h>
+#include <simutil.h>
+
+Define_Module(ListenersModule);
+
+void ListenersModule::initialize()
+{
+    // TODO - Generated method body
+    frameListener = new MyFrameListener();
+    simulation.getSystemModule()->subscribe("rxPk",frameListener);
+    //simulation.getSystemModule()->subscribe("packetReceivedFromLower",frameListener);
+}
+
+void ListenersModule::handleMessage(cMessage *msg)
+{
+    // TODO - Generated method body
+}
+
+void ListenersModule::finish(){
+    //unsubscribe("rxPk",frameListener);
+    //subscribe("packetReceivedFromLower",frameListener);
+    simulation.getSystemModule()->unsubscribe("rxPk",frameListener);
+    recordScalar("UtkalListened Values", this->frameListener->tempDelmeJustForTest);
+}
